@@ -1,0 +1,416 @@
+@import "../../vars/style.scss";
+
+@mixin hFontSize {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:1140px) {
+    .container {
+        max-width: 1920px;
+        width: 100;
+
+        .content {
+            margin: auto;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+
+            .logo {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .nav {
+                width: 45vw;
+                display: flex;
+                justify-content: space-between;
+                @include fontFam;
+
+                .nav__user {
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                    display: inline-flex;
+
+
+                    .nav__option {
+                        text-decoration: none;
+                        @include hFontSize;
+                        font-weight: 700;
+                        color: #565656;
+                    }
+
+                    .nav__option:hover {
+                        border-top: 3px solid $blue;
+                        padding-top: 27px;
+                    }
+
+                    .nav__option:active {
+                        border-top: 3px solid $blue;
+                        padding-top: 27px;
+                    }
+
+                    .nav__webdev {
+                        margin-right: 10%;
+                    }
+
+                    .nav__ad {
+                        margin-left: 10%;
+                    }
+                }
+
+                .nav__entrylang {
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: flex-end;
+
+                    .nav__entry {
+                        padding-top: 32px;
+                        padding-bottom: 32px;
+                        margin-left: 4%;
+                        margin-right: 4%;
+
+                        .nav__option {
+                            text-decoration: none;
+                            @include hFontSize;
+                            font-weight: 800;
+                            color: #55B570;
+                        }
+
+                        .nav__option:hover {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+
+                        .nav__option:hover {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+
+                        .nav__option:active {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+
+                        .nav__option:active {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+                    }
+
+                    .nav__languages {
+                        margin-top: 27px;
+                        margin-bottom: 30px;
+                        background: #F9F9F9;
+                        border: 1px solid #EBEBEB;
+                        border-radius: 14px;
+                        box-sizing: border-box;
+                        margin-right: 5%;
+
+
+
+                        label {
+                            display: inline-block;
+                            width: 35px;
+                            height: 28px;
+                            border-radius: 14px;
+                            transition: all 0.2s;
+                            font-weight: 700;
+                            font-size: 11px;
+                            line-height: 13px;
+                            text-align: center;
+                            padding-top: 7px;
+                        }
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        input[type="radio"]:checked+label {
+                            background: $blue;
+                            border-radius: 14px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1139px) {
+    .container {
+        max-width: 1920px;
+        width: 100;
+
+        .content {
+            margin: auto;
+            width: 96%;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .nav {
+                width: 70vw;
+                display: flex;
+                justify-content: space-between;
+
+                @include fontFam;
+
+                .nav__user {
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: space-around;
+
+                    .nav__option {
+                        text-decoration: none;
+                        @include hFontSize;
+                        font-weight: 700;
+                        color: #565656;
+                    }
+
+                    .nav__option:hover {
+                        border-top: 3px solid $blue;
+                        padding-top: 27px;
+                    }
+
+                    .nav__option:active {
+                        border-top: 3px solid $blue;
+                        padding-top: 27px;
+                    }
+
+                    .nav__webdev {
+                        margin-right: 10%;
+                    }
+
+                    .nav__ad {
+                        margin-left: 10%;
+                    }
+                }
+
+                .nav__entrylang {
+                    display: flex;
+                    flex-grow: 1;
+                    justify-content: flex-end;
+
+                    .nav__entry {
+                        padding-top: 32px;
+                        padding-bottom: 32px;
+                        margin-left: 4%;
+                        margin-right: 4%;
+
+                        .nav__option {
+                            text-decoration: none;
+                            @include hFontSize;
+                            font-weight: 800;
+                            color: #55B570;
+                        }
+
+                        .nav__option:hover {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+
+                        .nav__option:active {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+
+                    }
+
+                    .nav__languages {
+                        margin-top: 27px;
+                        margin-bottom: 30px;
+                        background: #F9F9F9;
+                        border: 1px solid #EBEBEB;
+                        border-radius: 14px;
+                        box-sizing: border-box;
+                        margin-right: 5%;
+
+
+
+                        label {
+                            display: inline-block;
+                            width: 35px;
+                            height: 28px;
+                            border-radius: 14px;
+                            transition: all 0.2s;
+                            font-weight: 700;
+                            font-size: 11px;
+                            line-height: 13px;
+                            text-align: center;
+                            padding-top: 7px;
+                        }
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        input[type="radio"]:checked+label {
+                            background: $blue;
+                            border-radius: 14px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 1920px;
+        width: 100;
+
+        .content {
+            margin: auto;
+            width: 90%;
+            height: 125px;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                position: absolute;
+                width: 78px;
+                height: 36px;
+                left: 16px;
+                top: 26px;
+            }
+
+            .nav {
+                display: flex;
+                flex-direction: column-reverse;
+                @include fontFam;
+
+                .nav__user {
+                    display: flex;
+                    text-align: center;
+                    padding-bottom: 12px;
+
+
+
+                    .nav__option {
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: #565656;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        @include fontFam;
+                        text-transform: uppercase;
+                    }
+
+                    .nav__webdev {
+                        padding-top: 10px;
+                        margin-right: 1%;
+                        margin-left: 1%;
+                        width: calc(90vw/2);
+                        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+                    }
+
+                    .nav__ad {
+                        padding-top: 10px;
+                        margin-left: 1%;
+                        margin-right: 6%;
+                        width: calc(90vw/2);
+                        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+                    }
+
+                    .nav__webdev:hover {
+                        border-top: 3px solid $blue;
+                    }
+
+                    .nav__ad:hover {
+                        border-top: 3px solid $blue;
+                    }
+
+                    .nav__webdev:active {
+                        border-top: 3px solid $blue;
+                    }
+
+                    .nav__ad:active {
+                        border-top: 3px solid $blue;
+                    }
+                }
+
+                .nav__entrylang {
+                    display: flex;
+                    justify-content: flex-end;
+                    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+
+                    .nav__entry {
+                        margin-left: 4%;
+                        margin-right: 1%;
+                        padding-top: 22px;
+                        padding-bottom: 22px;
+
+                        .nav__registration {
+                            display: none;
+                        }
+
+                        .nav__option {
+                            text-decoration: none;
+                            @include hFontSize;
+                            font-weight: 800;
+                            color: #55B570;
+                        }
+
+                        .nav__option:hover {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+
+                        .nav__option:active {
+                            border-top: 3px solid $blue;
+                            padding-top: 27px;
+                        }
+                    }
+
+                    .nav__languages {
+                        background: #F9F9F9;
+                        border: 1px solid #EBEBEB;
+                        border-radius: 14px;
+                        box-sizing: border-box;
+                        height: 32px;
+                        margin: 18px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+
+                        label {
+                            display: inline-block;
+                            width: 35px;
+                            height: 29px;
+                            border-radius: 14px;
+                            transition: all 0.2s;
+                            font-weight: 700;
+                            font-size: 11px;
+                            line-height: 13px;
+                            text-align: center;
+                            padding-top: 7px;
+                        }
+
+                        input[type="radio"] {
+                            display: none;
+                        }
+
+                        input[type="radio"]:checked+label {
+                            background: $blue;
+                            border-radius: 14px;
+                            color: #FFFFFF;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
